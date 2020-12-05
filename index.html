@@ -1,25 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Website</title>
-    <link rel="stylesheet" href="style/index_style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Parallax Website Demo</title>
+  <link rel="stylesheet" href="style/index_style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <section class="header">
-        <a href="" class="logo">
-            <h2>Travel</h2>
-        </a>
-        <div class="toggle"><img src="img/toggle.png" alt=""></div>
-    </section>
+    <input type="checkbox" id="check">
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+    <header>My App</header>
+  <ul>
+<li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+<li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
+<li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
+<li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
+<li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
+<li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
+<li><a href="#"><i class="far fa-envelope"></i>Contact</a></li>
+</ul>
+</div>
 
-    <section class="banner">
-        <img src="img/banner.jpg" alt="" class="fitBg">
-        <div class="content">
-            <h2>explore the world</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae ducimus iure ipsam minima. Odit pariatur sunt natus deleniti autem. Eius molestias neque animi, corporis voluptate labore quae dolorem tempora illo.</p>
-        </div>
-    </section>
+<aside class="zoom">
+		<img src="image/mountain1.png" id="layer1">
+		<img src="image/mountain2.png" id="layer2">
+		<img src="text.png" id="text">
+  	
+	
+	
+	<script type="text/javascript">
+		var layer1 = document.getElementById('layer1')
+		scroll = window.pageYOffset;
+		document.addEventListener('scroll', function (e) {
+			var offset = window.pageYOffset;
+			scroll = offset;
+			layer1.style.width = (100 + scroll/5) + '%';
+		});
+		var layer2 = document.getElementById('layer2')
+		scroll = window.pageYOffset;
+		document.addEventListener('scroll', function (e) {
+			var offset = window.pageYOffset;
+			scroll = offset;
+			layer2.style.width = (100 + scroll/5) + '%';
+			layer2.style.left = scroll/50 + '%';
+		});
+		var text= document.getElementById('text')
+		scroll = window.pageYOffset;
+		document.addEventListener('scroll', function (e) {
+			var offset = window.pageYOffset;
+			scroll = offset;
+			text.style.width = (100 + scroll/5) + '%';
+			text.style.top = -scroll/20 + '%';
+		});
+	</script>
+</aside>
+
+  <section class="section section-light">
+    <h2>Section One</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in. Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore repellat quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex, omnis!
+    </p>
+  </section>
+
+  <div class="pimg2">
+    <div class="ptext">
+      <span class="border trans">
+        Image Two Text
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Section Two</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
+    </p>
+  </section>
+
+  <div class="pimg3">
+    <div class="ptext">
+      <span class="border trans">
+        Image Three Text
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Section Three</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
+    </p>
+  </section>
+  
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+        Traversy Media
+      </span>
+    </div>
+  </div>
+
+
 </body>
 </html>
