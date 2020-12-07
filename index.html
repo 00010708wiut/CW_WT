@@ -4,36 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Parallax Website Demo</title>
+  <title>Index</title>
   <link rel="stylesheet" href="style/index_style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <input type="checkbox" id="check">
-    <label for="check">
-      <i class="fas fa-bars" id="btn"></i>
-      <i class="fas fa-times" id="cancel"></i>
-    </label>
-    <div class="sidebar">
-    <header>My App</header>
-  <ul>
-<li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
-<li><a href="#"><i class="fas fa-link"></i>Shortcuts</a></li>
-<li><a href="#"><i class="fas fa-stream"></i>Overview</a></li>
-<li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
-<li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
-<li><a href="#"><i class="fas fa-sliders-h"></i>Services</a></li>
-<li><a href="#"><i class="far fa-envelope"></i>Contact</a></li>
-</ul>
-</div>
+    
+    <nav id="nav-pd">
+        <div class="l-navbar" id="navbar">
+            <nav class="nav">
+                <div>
+                    <div class="nav__brand">
+                        <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+                        <a href="#" class="nav__logo">EVEREST</a>
+                    </div>
+                    <div class="nav__list">
+                        <a href="index.html" class="nav__link active">
+                            <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                            <span class="nav__name">Home</span>
+                        </a>
+                        <a href="gallery.html" class="nav__link">
+                            <ion-icon name="camera-outline" class="nav__icon"></ion-icon>
+                            <span class="nav__name">Gallery</span>
+                        </a>
 
-<aside class="zoom">
+                        <a href="contact.html" class="nav__link">
+                            <ion-icon name="call-outline" class="nav__icon"></ion-icon>
+                            <span class="nav__name">Contact</span>
+                        </a>
+                        <a href="#" class="nav__link">
+                            <ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
+                            <span class="nav__name">Analytics</span>
+                        </a>
+                        <a href="booking.html" class="nav__link">
+                            <ion-icon name="logo-paypal" class="nav__icon"></ion-icon>
+                            <span class="nav__name">Booking</span>
+                        </a>
+                        <a href="#" class="nav__link">
+                            <ion-icon name="settings-outline" class="nav__icon"></ion-icon>
+                            <span class="nav__name">Settings</span>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="log-in.html" class="nav__link">
+                    <ion-icon name="log-in-outline" class="nav__icon"></ion-icon>
+                    <span class="nav__name">Log In</span>
+                </a>
+            </nav>
+        </div>
+
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        
+        <!-- ===== MAIN JS ===== -->
+        <script src="js/nav.js"></script>
+    </nav>
+
+<main class="zoom">
 		<img src="image/mountain1.png" id="layer1">
 		<img src="image/mountain2.png" id="layer2">
-		<img src="text.png" id="text">
-  	
-	
-	
+	 <div class="ptext">
+      <span class="border">
+       <h1>Everest</h1><br>
+       <h2>Travelling Agency</h2>
+      </span>
+    </div>
+
+    
 	<script type="text/javascript">
 		var layer1 = document.getElementById('layer1')
 		scroll = window.pageYOffset;
@@ -59,53 +98,163 @@
 			text.style.top = -scroll/20 + '%';
 		});
 	</script>
-</aside>
+</main>
 
   <section class="section section-light">
-    <h2>Section One</h2>
+    <h2>Service</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in. Distinctio provident dolorem modi cumque illo enim quidem tempora deserunt nostrum voluptate labore repellat quisquam quasi cum suscipit dolore ab consequuntur, ad porro earum temporibus. Laborum ad temporibus ex, omnis!
+      Planning a trip is a time-consuming and complicated process. Our travel agents simplify this process for their customers in addition to providing consultation services and entire travel packages. They may book flights, cruises, rental cars and hotels, as well as resort stays and events. Agents cater to a wide demographic, serving both individuals and corporations. We can also concentrate in a special segment of the field; many agents specialize in leisure travel, business trips, or location-specific journeys to Europe, Africa, or Asia.
     </p>
   </section>
 
-  <div class="pimg2">
-    <div class="ptext">
-      <span class="border trans">
-        Image Two Text
-      </span>
-    </div>
-  </div>
-
+  
+      <header>
+          
+     <!--image slider start-->
+     <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="image/9.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="image/10.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="image/11.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="image/12.jpg" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+  
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+ 
+    </header>
   <section class="section section-dark">
     <h2>Section Two</h2>
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
+      Planning a trip is a time-consuming and complicated process. Our travel agents simplify this process for their customers in addition to providing consultation services and entire travel packages. They may book flights, cruises, rental cars and hotels, as well as resort stays and events. Agents cater to a wide demographic, serving both individuals and corporations. We can also concentrate in a special segment of the field; many agents specialize in leisure travel, business trips, or location-specific journeys to Europe, Africa, or Asia.
     </p>
   </section>
-
+<content>
   <div class="pimg3">
-    <div class="ptext">
-      <span class="border trans">
-        Image Three Text
-      </span>
-    </div>
-  </div>
+    <div class="container">
+      <div class="box">
+           <a href="https://nestone.uz/">
+           <div class="imgBox">
+              <img src="image/13.jpg" alt="building">
+          </div>
+          <div class="details">
+              <div class="content">
+                   <h2>NEST ONE</h2>
+                   <p>The first skyscraper in Uzbekistan...</p>
+              </div>
+          </a>
+       </div>
+      </div>
 
+      <div class="box">
+          <a href="https://www.mbc.uz/project/34">
+       <div class="imgBox">
+           <img src="image/15.jpg" alt="">
+       </div>
+       <div class="details">
+           <div class="content">
+                <h2>DO'STLAR</h2>
+                <p>Residental complex "DO'STLAR" is one of the most unusual, and at the same time comfortable residental comlexes in our capital.</p>
+           </div>
+       </a>
+       </div>
+      </div>
+      <div class="box">
+       <a href="https://cr.mbc.uz/">
+       <div class="imgBox">
+           <img src="image/14.jpg" alt="">
+       </div>
+       <div class="details">
+           <div class="content">
+                <h2>CEMBRIDGE RESIDENCE</h2>
+                <p>Introducing a happy life, a family that feels good and comfortable always appears before your eyes, and Cambridge village is the ideal place for a comfortable and safe life for your family.</p>
+           </div>
+           </a>
+       </div>
+      </div>
+     
+     
+  </div>
+  </div>
+</content>
   <section class="section section-dark">
-    <h2>Section Three</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
-    </p>
+    <footer>
+        <div class="container">
+            <div class="ftr">
+                <div class="imgBox" style="height:190px;">
+                  <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.800461227865!2d69.27814394955941!3d41.29144700980102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ac9400381b3%3A0x6051f85d6afe347!2sMurad%20Buildings!5e0!3m2!1suz!2s!4v1585749290282!5m2!1suz!2s" width="320" height="190" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+                  </div>
+            </div>
+            <div class="ftr">
+                <h3>Contact</h3>
+                <ul class="content">
+                    <li><a href="#">info@gmail.com</a></li>
+                    <li><a href="#">(707) 322-22-322</a></li>
+                    <li><a href="#">Richmond,VA,2203</a></li>
+                </ul>
+            </div>
+            <div class="ftr">
+                <h3>Social</h3>
+                <ul class="content">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="ftr">
+                <h3>Join Our Newsletter</h3>
+                <form action="#">
+                    <input type="email" placeholder="Enter Your Email." required>
+                    <div class="btn">
+                        <input type="submit" value="Subscribe">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </footer>
   </section>
-  
-  <div class="pimg1">
-    <div class="ptext">
-      <span class="border">
-        Traversy Media
-      </span>
-    </div>
-  </div>
-
-
-</body>
+  </body>
 </html>
