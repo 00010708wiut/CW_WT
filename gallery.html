@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style/gallery_style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <nav id="nav-pd">
+      <div class="l-navbar" id="navbar">
+          <nav class="nav">
+              <div>
+                  <div class="nav__brand">
+                      <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+                      <a href="#" class="nav__logo">EVEREST</a>
+                  </div>
+                  <div class="nav__list">
+                      <a href="index.html" class="nav__link">
+                          <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                          <span class="nav__name">Home</span>
+                      </a>
+                      <a href="gallery.html" class="nav__link active">
+                          <ion-icon name="camera-outline" class="nav__icon"></ion-icon>
+                          <span class="nav__name">Gallery</span>
+                      </a>
+
+                      <a href="contact.html" class="nav__link">
+                          <ion-icon name="call-outline" class="nav__icon"></ion-icon>
+                          <span class="nav__name">Contact</span>
+                      </a>
+                      <a href="about.html" class="nav__link">
+                          <ion-icon name="people-circle-outline" class="nav__icon"></ion-icon>
+                          <span class="nav__name">About US</span>
+                      </a>
+                      <a href="booking.html" class="nav__link">
+                          <ion-icon name="logo-paypal" class="nav__icon"></ion-icon>
+                          <span class="nav__name">Booking</span>
+                      </a>
+                      
+                  </div>
+              </div>
+
+              <a href="log-in.html" class="nav__link">
+                  <ion-icon name="log-in-outline" class="nav__icon"></ion-icon>
+                  <span class="nav__name">Log In</span>
+              </a>
+          </nav>
+      </div>
+
+      <!-- ===== IONICONS ===== -->
+      <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+      
+      <!-- ===== MAIN JS ===== -->
+      <script src="js/nav.js"></script>
+  </nav>
+    <div class="gallery-section">
+      <div class="inner-width">
+        <h1>Our Gallery</h1>
+        <div class="border"></div>
+        <div class="gallery">
+
+          <a href="image/11.jpg" class="image">
+            <img src="image/11.jpg" alt="">
+          </a>
+
+          <a href="image/13.jpg" class="image">
+            <img src="image/13.jpg" alt="">
+          </a>
+
+          <a href="image/10.jpg" class="image">
+            <img src="image/10.jpg" alt="">
+          </a>
+
+          <a href="image/14.jpg" class="image">
+            <img src="image/14.jpg" alt="">
+          </a>
+
+          <a href="image/15.jpg" class="image">
+            <img src="image/15.jpg" alt="">
+          </a>
+
+          <a href="image/image1.jpg" class="image">
+            <img src="image/image1.jpg" alt="">
+          </a>
+
+          <a href="image/9.jpg" class="image">
+            <img src="image/9.jpg" alt="">
+          </a>
+
+          <a href="image/17.jpg" class="image">
+            <img src="image/17.jpg" alt="">
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+
+  <script>
+    $(".gallery").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled: true
+      }
+    });
+  </script>
+
+  </body>
+</html>
