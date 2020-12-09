@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Vehicle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/booking_style.css" />
+  </head>
+  <body><nav id="nav-pd">
+    <div class="l-navbar" id="navbar">
+        <nav class="nav">
+            <div>
+                <div class="nav__brand">
+                    <ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+                    <a href="#" class="nav__logo">EVEREST</a>
+                </div>
+                <div class="nav__list">
+                    <a href="index.html" class="nav__link">
+                        <ion-icon name="home-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">Home</span>
+                    </a>
+                    <a href="gallery.html" class="nav__link">
+                        <ion-icon name="camera-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">Gallery</span>
+                    </a>
+
+                    <a href="contact.html" class="nav__link">
+                        <ion-icon name="call-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">Contact</span>
+                    </a>
+                    <a href="about.html" class="nav__link">
+                        <ion-icon name="people-circle-outline" class="nav__icon"></ion-icon>
+                        <span class="nav__name">About US</span>
+                    </a>
+                    <a href="booking.html" class="nav__link active">
+                        <ion-icon name="logo-paypal" class="nav__icon"></ion-icon>
+                        <span class="nav__name">Booking</span>
+                    </a>
+                    
+                </div>
+            </div>
+
+            <a href="log-in.html" class="nav__link">
+                <ion-icon name="log-in-outline" class="nav__icon"></ion-icon>
+                <span class="nav__name">Log In</span>
+            </a>
+        </nav>
+    </div>
+
+    <!-- ===== IONICONS ===== -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    
+    <!-- ===== MAIN JS ===== -->
+    <script src="js/nav.js"></script>
+</nav>
+    <div class="container">
+      <div class="book">
+        <div class="description">
+          <h1><strong>Book</strong> your Ride</h1>
+          <p>
+            Our local service provides to tourists a trip which is affordable in price and travelling around the world based on consumer's wishes. They have several options whether to ride luxurious car or modest car.  We also provide safe and interesting journey!
+          </p>
+          <div class="quote">
+            <p>
+              The service works the whole day. Feel free and contact with us!
+            </p>
+          </div>
+          <ul>
+            <li>Super reliable service</li>
+            <li>24/7 customer service</li>
+            <li>GPS tracking and help</li>
+            <li>Wide range vehicle</li>
+          </ul>
+        </div>
+        <div class="form">
+          <form>
+            <div class="inpbox full">
+              <span class="flaticon-taxi"></span>
+              <select id="cars" name="cars">
+                <option value="">Select Vehicle</option>
+                <option value="bmw">BMW</option>
+                <option value="mersedes">Mersedes</option>
+                <option value="ford">Ford</option>
+                <option value="audi">Audi</option>
+              </select>
+            </div>
+            <div class="inpbox">
+              <span class="flaticon-globe"></span>
+              <input type="text" placeholder="Pickup Location">
+            </div>
+            <div class="inpbox">
+              <span class="flaticon-calendar"></span>
+              <input type="date" placeholder="Pickup Date">
+            </div>
+            <div class="inpbox">
+              <span class="flaticon-location"></span>
+              <input type="text" placeholder="Drop Location">
+            </div>
+            <div class="inpbox">
+              <span class="flaticon-calendar"></span>
+              <input type="date" placeholder="Drop Date">
+            </div>
+            <div class="inpbox">
+              <span class="flaticon-user"></span>
+              <input type="text" placeholder="Full Name">
+            </div>
+            <div class="inpbox">
+              <span class="flaticon-email"></span>
+              <input type="email" placeholder="Email">
+            </div>
+            <div class="inpbox full">
+              <div class="inrbox">
+                <span class="flaticon-taxi"> Cheap</span>
+                <input type="radio" name="plan">
+                <h2>$50</h2>
+                <span>1 Passenger</span>
+              </div>
+              <div class="inrbox">
+                <span class="flaticon-taxi"> Pro</span>
+                <input type="radio" name="plan">
+                <h2>$120</h2>
+                <span>2 Passenger</span>
+              </div>
+              <div class="inrbox">
+                <span class="flaticon-taxi"> Advance</span>
+                <input type="radio" name="plan">
+                <h2>$180</h2>
+                <span>4 Passenger</span>
+              </div>
+            </div>
+            <button class="subt">Submit</button>
+            <button class="rst">Reset</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
