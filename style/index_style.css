@@ -1,3 +1,4 @@
+/*----------------------------------INDEX_STYLE-------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 * {
   padding: 0;
@@ -12,13 +13,13 @@
 :root{
   --nav-width: 92px;
 
-  /*===== Colores =====*/
+  /*===== Colors =====*/
   --first-color: #0C5DF4;
   --bg-color: #12192C;
   --sub-color: #B6CEFC;
   --white-color: #FFF;
   
-  /*===== Fuente y tipografia =====*/
+  /*===== Fonts =====*/
   --body-font: 'Poppins', sans-serif;
   --normal-font-size: 1rem;
   --small-font-size: .875rem;
@@ -156,14 +157,9 @@ a{
   transform: rotate(180deg);
 }
 
-main, html{
+.main, html{
   height:100%;
   margin:0;
-  font-size:16px;
-  font-family:"Lato", sans-serif;
-  font-weight:400;
-  line-height:1.8em;
-  color:#666;
 }
 
 .zoom{
@@ -205,19 +201,23 @@ main, html{
   z-index: 9;
 }
 
- .pimg3{
+.pimg3{
   position:relative;
   opacity:0.70;
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
- background-image:url('../image/image3.jpg');
+  background-image:url('../image/background1.jpg');
   min-height:400px;
+  text-align: center;
   /*
     fixed = parallax
     scroll = normal
   */
   background-attachment:fixed;
+}
+.pimg3 h1{
+  color: #fff;
 }
 content{
   margin: 0;
@@ -235,7 +235,7 @@ content{
 .container .box{
   position: relative;
   width: 300px;
-  height: 350px;
+  height: 330px;
   background: rgb(67, 201, 241);
   margin: 20px;
   box-sizing: border-box;
@@ -285,12 +285,13 @@ content{
   margin: 0;
   padding: 0;
   font-size: 32px;
-  color: #ff0;
+  color: rgb(15, 194, 248);
 }
 
 .container .box .details .content p{
   margin: 10px 0 0;
   padding: 0;
+  text-align: left;
 }
  
 
@@ -309,7 +310,7 @@ content{
 }
 
 .section-dark{
-  background-color:#282e34;
+  background-color:#12192C;
   color:#ddd;
   padding-left: 7rem;
 }
@@ -344,14 +345,14 @@ content{
 }
 
 @media(max-width:568px){
-  .pimg1, .pimg2, .pimg3{
+ .pimg3{
     background-attachment:scroll;
   }
 }
 
 
 footer{
-    background: #282e34;
+    background: #12192C;
     padding: 10px 0px;
 }
 footer .container{
@@ -455,7 +456,7 @@ header{
   
 .slide img{
     width: 100%;
-    height: 550px;
+    height: 700px;
 }
   
   /*css for manual slide navigation*/
@@ -536,3 +537,5 @@ header{
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background: #40D3DC;
 }
+
+
